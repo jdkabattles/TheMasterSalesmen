@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The CPO Prompt Playbook: Stop TWEAKING, Start DIRECTING</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+   <style>
+       :root {
+           --color-primary: #0a0a0a; /* Black */
+           --color-secondary: #FFD700; /* Gold */
+           --color-accent: #0f172a; /* Deep Navy */
+       }
+       body {
+           font-family: 'Inter', sans-serif;
+           background-color: #f8fafc; /* Light Gray Background */
+       }
+       .text-gold { color: var(--color-secondary); }
+       .bg-navy { background-color: var(--color-accent); }
+       .btn-primary {
+           background-color: var(--color-secondary);
+           color: var(--color-accent);
+           transition: all 0.3s ease;
+           box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+       }
+       .btn-primary:hover {
+           background-color: #e5c100;
+           box-shadow: 0 6px 20px rgba(255, 215, 0, 0.8);
+           transform: translateY(-2px);
+       }
+       .prompt-box {
+           background-color: #1e293b; /* Slate-700 */
+           color: #f1f5f9; /* Slate-100 */
+           border-left: 5px solid var(--color-secondary);
+       }
+       /* Style for the unique Master Salesman Teaser */
+       .teaser-box {
+           background-color: #0f172a; /* Deep Navy */
+           color: white;
+           padding: 2.5rem;
+           border-radius: 1rem;
+           box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+       }
+   </style>
+</head>
+<body class="antialiased">
+   <div id="top" class="min-h-screen pt-12 md:pt-24 pb-12">
+       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+           <!-- HEADER / VALUE BAR -->
+           <header class="text-center mb-16">
+               <p class="text-lg font-semibold text-gray-700 mb-2">Stop Wasting Time. Start Directing.</p>
+               <h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight">
+                   The <span class="text-gold">ONLY</span> Playbook for <br class="hidden sm:inline"> Executive-Ready AI Output.
+               </h1>
+               <p class="mt-4 text-2xl text-gray-600 max-w-3xl mx-auto">Turn your LLM into a salaried team of 10 expert consultants overnight.</p>
+           </header>
+
+           <!-- HERO SECTION: PRICE & PRIMARY CTA -->
+           <section class="bg-navy rounded-2xl p-6 md:p-12 shadow-2xl mb-16 max-w-4xl mx-auto">
+               <div class="text-center">
+                   <p class="text-gray-300 text-lg mb-4 uppercase tracking-widest">Immediate Access</p>
+                   <div class="flex items-center justify-center space-x-4 mb-6">
+                       <span class="text-4xl text-red-400 line-through opacity-70">$499</span>
+                       <span class="text-6xl md:text-8xl font-black text-gold">$197</span>
+                   </div>
+                   <p class="text-gray-400 mb-8">One-time investment. Lifetime competitive advantage.</p>
+                  
+                   <button id="cta-button-hero" class="btn-primary py-4 px-12 text-xl font-bold rounded-full w-full md:w-auto hover:bg-yellow-500">
+                       BUY NOW: Become the CPO
+                   </button>
+                   <p class="mt-4 text-sm text-gray-500">30-Day Money-Back Guarantee. No Questions Asked.</p>
+               </div>
+           </section>
+          
+           <!-- PAIN POINT SECTION -->
+           <section class="mb-20">
+               <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                   <div>
+                       <div class="flex items-center text-red-600 mb-3">
+                           <span class="text-3xl mr-2">❌</span>
+                           <h3 class="text-2xl font-bold">The Problem of Tinkering</h3>
+                       </div>
+                       <p class="text-gray-600 text-lg">You are spending valuable executive time **tweaking, refining, and rewriting** generic AI output. You ask for a strategy and get noise. You ask for analysis and get platitudes. That's not AI. That's a minimum-wage intern.</p>
+                   </div>
+                   <div>
+                       <div class="flex items-center text-green-600 mb-3">
+                           <span class="text-3xl mr-2">✅</span>
+                           <h3 class="text-2xl font-bold">The CPO Solution: Delegation</h3>
+                       </div>
+                       <p class="text-gray-600 text-lg">We teach you to **delegate**. You stop asking AI to *write*. You start telling the **"Chief Financial Officer"** persona to *scrutinize* or the **"Ruthless Negotiator"** to *draft*. Immediate, high-level, actionable results on the first command.</p>
+                   </div>
+               </div>
+           </section>
+
+           <!-- CORE VALUE SECTION -->
+           <section class="mb-20">
+               <h2 class="text-4xl font-extrabold text-center text-gray-900 mb-12">What You Are Buying: 10 Digital Executives</h2>
+               <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                   <!-- Value Card 1 -->
+                   <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gold text-center">
+                       <p class="text-4xl mb-3">👨‍💼</p>
+                       <p class="font-bold text-lg">Skeptical Board Member</p>
+                       <p class="text-sm text-gray-500 mt-1">Stress-test every assumption.</p>
+                   </div>
+                   <!-- Value Card 2 -->
+                   <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gold text-center">
+                       <p class="text-4xl mb-3">📣</p>
+                       <p class="font-bold text-lg">Chief Marketing Officer</p>
+                       <p class="text-sm text-gray-500 mt-1">Conversion-focused sales copy.</p>
+                   </div>
+                   <!-- Value Card 3 -->
+                   <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gold text-center">
+                       <p class="text-4xl mb-3">💰</p>
+                       <p class="font-bold text-lg">Chief Financial Officer</p>
+                       <p class="text-sm text-gray-500 mt-1">Ruthless cost optimization.</p>
+                   </div>
+                   <!-- Value Card 4 -->
+                   <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gold text-center">
+                       <p class="text-4xl mb-3">💡</p>
+                       <p class="font-bold text-lg">Chief Innovation Officer</p>
+                       <p class="text-sm text-gray-500 mt-1">Generate disruptive concepts.</p>
+                   </div>
+                   <!-- Value Card 5 -->
+                   <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-gold text-center">
+                       <p class="text-4xl mb-3">🤝</p>
+                       <p class="font-bold text-lg">Ruthless Negotiator</p>
+                       <p class="text-sm text-gray-500 mt-1">Draft high-stakes communication.</p>
+                   </div>
+                   <!-- ... 5 more personas included in the full playbook ... -->
+                   <div class="col-span-full text-center mt-6">
+                       <p class="text-gray-700 font-semibold text-lg">And 5 other high-level persona templates included in the full playbook.</p>
+                   </div>
+               </div>
+           </section>
+
+           <!-- THE MASTER SALESMAN TEASER PROMPT (High-Value Proof) -->
+           <section class="teaser-box mb-20">
+               <h2 class="text-4xl font-extrabold text-gold mb-4">PROOF: Steal This Prompt NOW.</h2>
+               <p class="text-gray-300 text-xl mb-8">This is the power of CPO delegation. Copy this entire block. Paste it into your LLM. Watch your conversion rate jump.</p>
+
+               <div class="prompt-box p-6 rounded-lg mb-6">
+                   <p class="text-gold font-bold mb-3">CPO Persona: The Ruthless Negotiator (Email Campaign Focus)</p>
+                   <pre id="teaser-prompt" class="whitespace-pre-wrap text-sm leading-relaxed cursor-pointer hover:bg-slate-800 p-2 rounded transition-colors duration-200">
+**CPO Persona:** Act as a seasoned, high-stakes sales director. Your job is to draft a follow-up email sequence that maximizes urgency and forces the prospect to commit on a delayed enterprise deal. Tone must be firm, professional, and confident.
+
+**Context/Task:** The prospect, [PROSPECT NAME], confirmed strong interest in our enterprise SaaS package 10 days ago. They have since missed two check-in calls. The deal value is $150,000. Your goal is to draft the final 'take it or leave it' email.
+
+**Deliverable:** Write the full, professional 'commitment device' email (Email #3 in the sequence) that:
+1.  Removes our product from the prospect's decision set by politely stating we must prioritize other committed clients (creating FOMO/scarcity).
+2.  Provides a clear, hard deadline for action (e.g., end of the business week).
+3.  Asks a single, direct question requiring a YES or NO answer.
+
+**[Note: Click anywhere on this code block to copy the full prompt.]**
+</pre>
+               </div>
+               <div class="flex items-center justify-between">
+                   <p class="text-sm text-gray-400">Teaser value confirmed. Imagine 10 custom-built templates like this.</p>
+                   <button id="copy-button" class="bg-gray-700 text-white py-2 px-4 rounded-full text-sm font-semibold hover:bg-gold hover:text-navy transition duration-200">
+                       Copy Prompt
+                   </button>
+               </div>
+           </section>
+
+           <!-- FINAL CTA & GUARANTEE -->
+           <section class="text-center pt-10">
+               <h2 class="text-4xl font-extrabold text-gray-900 mb-6">Your Delegation Starts Now.</h2>
+               <p class="text-xl text-gray-700 max-w-2xl mx-auto mb-8">Stop wasting precious time and dumping money into people and things that don't share your passion and drive. Invest $197 once and gain 10 digital executives forever.</p>
+              
+               <button id="cta-button-final" class="btn-primary py-4 px-16 text-2xl font-black rounded-full hover:bg-yellow-500">
+                   GET THE CPO PLAYBOOK: $197
+               </button>
+           </section>
+
+       </div>
+   </div>
+
+   <!-- JAVASCRIPT FOR COPY TO CLIPBOARD FUNCTIONALITY -->
+   <script>
+       const teaserPrompt = document.getElementById('teaser-prompt');
+       const copyButton = document.getElementById('copy-button');
+       const ctaButtons = [document.getElementById('cta-button-hero'), document.getElementById('cta-button-final')];
+       const productUrl = 'https://8332170281457.gumroad.com/l/tiaxvy'; // Added Gumroad URL
+
+       const fullPromptText = `**CPO Persona:** Act as a seasoned, high-stakes sales director. Your job is to draft a follow-up email sequence that maximizes urgency and forces the prospect to commit on a delayed enterprise deal. Tone must be firm, professional, and confident.
+
+**Context/Task:** The prospect, [PROSPECT NAME], confirmed strong interest in our enterprise SaaS package 10 days ago. They have since missed two check-in calls. The deal value is $150,000. Your goal is to draft the final 'take it or leave it' email.
+
+**Deliverable:** Write the full, professional 'commitment device' email (Email #3 in the sequence) that:
+1.  Removes our product from the prospect's decision set by politely stating we must prioritize other committed clients (creating FOMO/scarcity).
+2.  Provides a clear, hard deadline for action (e.g., end of the business week).
+3.  Asks a single, direct question requiring a YES or NO answer.`;
+
+       function copyToClipboard(event) {
+           const tempTextArea = document.createElement('textarea');
+           tempTextArea.value = fullPromptText;
+          
+           tempTextArea.style.position = 'fixed';
+           tempTextArea.style.top = '-9999px';
+           tempTextArea.style.left = '-9999px';
+          
+           document.body.appendChild(tempTextArea);
+           tempTextArea.select();
+
+           let success = false;
+           try {
+               success = document.execCommand('copy');
+           } catch (err) {
+               console.error('Copy failed (execCommand):', err);
+           }
+          
+           document.body.removeChild(tempTextArea);
+
+           const targetButton = event.currentTarget.id === 'copy-button' ? copyButton : teaserPrompt;
+          
+           if (success) {
+               targetButton.textContent = 'COPIED!';
+               targetButton.classList.add('bg-green-600', 'hover:bg-green-700', 'text-white');
+               targetButton.classList.remove('bg-gray-700', 'hover:bg-gold', 'hover:text-navy');
+               setTimeout(() => {
+                   if (targetButton.id === 'copy-button') {
+                        targetButton.textContent = 'Copy Prompt';
+                        targetButton.classList.remove('bg-green-600', 'hover:bg-green-700', 'text-white');
+                        targetButton.classList.add('bg-gray-700', 'hover:bg-gold', 'hover:text-navy');
+                   } else {
+                        targetButton.textContent = targetButton.getAttribute('data-original-text');
+                        targetButton.classList.remove('bg-green-600', 'hover:bg-green-700', 'text-white');
+                   }
+               }, 2000);
+           } else {
+               console.error('Final copy failure.');
+           }
+       }
+
+       // Store original text for the text block itself
+       teaserPrompt.setAttribute('data-original-text', teaserPrompt.textContent);
+
+       teaserPrompt.addEventListener('click', copyToClipboard);
+       copyButton.addEventListener('click', copyToClipboard);
+
+       // Functional click handler for CTA buttons (redirects to Gumroad)
+       ctaButtons.forEach(button => {
+           button.addEventListener('click', (event) => {
+               event.preventDefault(); // Stop default action
+              
+               // Show redirection state before navigating
+               const originalText = button.textContent;
+               button.textContent = 'Redirecting to Checkout...';
+               button.classList.remove('btn-primary');
+               button.classList.add('bg-green-600');
+              
+               // Navigate after a slight visual delay
+               setTimeout(() => {
+                   window.location.href = productUrl;
+               }, 500);
+           });
+       });
+   </script>
+</body>
+</html>
+
